@@ -1,139 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Anmol Boutique</title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
+
 <header>
 
     <div class="logo">
+
         <h1>Anmol Boutique</h1>
-        <p>Style That Defines You</p>
+
+        <p>Style That Defines You ✨</p>
+
     </div>
 
     <nav>
+
         <a href="/">Home</a>
+
         <a href="/gallery">Gallery</a>
+
         <a href="/prices">Price List</a>
+
         <a href="/contact">Contact</a>
+
     </nav>
 
 </header>
 
-<!-- HERO SECTION -->
+<!-- =========================
+     HERO SECTION
+========================= -->
 
 <section class="hero">
 
     <img src="{{ url_for('static', filename='images/banner.jpg.jpeg') }}">
 
     <div class="hero-overlay">
-        <h2>Latest Punjabi Boutique Collection</h2>
-        <p>Traditional • Stylish • Trending</p>
 
-        <button>Shop Now</button>
+        <h2>Designer Punjabi Suits & Boutique Stitching</h2>
+
+        <p>
+            Punjabi Suits • Neck Designs • Palazzo • Salwars
+        </p>
+
+        <a href="/gallery">
+
+            <button>Explore Collection</button>
+
+        </a>
+
     </div>
 
 </section>
 
-<!-- TEXT BELOW IMAGE -->
-
-<section class="hero-content">
-
-    <h2>Designer Punjabi Suits & Boutique Stitching</h2>
-
-    <p>
-        Punjabi Suits | Neck Designs | Palazzo | Salwars
-    </p>
-
-    <a href="/gallery">
-        <button>Explore Collection</button>
-    </a>
-
-</section>
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT SECTION
+========================= -->
 
 <section class="about">
 
-    <h2>Welcome To Anmol Boutique</h2>
+    <div class="about-content">
 
-    <p>We provide ladies stitching services including:</p>
+        <h2>✨ Welcome To Anmol Boutique ✨</h2>
 
-    <ul>
-        <li>Punjabi Suits</li>
-        <li>Neck Designs</li>
-        <li>Plazzo Designs</li>
-        <li>Patiala Salwars</li>
-        <li>Bridal Wear</li>
-        <li>Trending Suits</li>
-    </ul>
+        <p>
+            We create stylish Punjabi boutique outfits with premium stitching,
+            modern fashion trends and elegant designer finishing.
+        </p>
+
+    </div>
 
 </section>
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES SECTION
+========================= -->
 
 <section class="services">
 
-    <h2>Our Services</h2>
+    <h2 class="title">Our Special Services</h2>
 
     <div class="service-container">
 
         <div class="service-box">
-            <h3>Punjabi Suit Stitching</h3>
-            <p>Beautiful custom stitched Punjabi suits.</p>
+
+            <div class="service-icon">👗</div>
+
+            <h3>Punjabi Suits</h3>
+
+            <p>
+                Beautiful Punjabi suits with elegant stitching and trendy designs.
+            </p>
+
         </div>
 
         <div class="service-box">
-            <h3>Designer Neck Designs</h3>
-            <p>Latest trendy neck patterns available.</p>
+
+            <div class="service-icon">✨</div>
+
+            <h3>Neck Designs</h3>
+
+            <p>
+                Stylish and latest neck patterns for boutique outfits.
+            </p>
+
         </div>
 
         <div class="service-box">
-            <h3>Plazzo & Salwars</h3>
-            <p>Stylish plazzo and salwar stitching.</p>
+
+            <div class="service-icon">💃</div>
+
+            <h3>Palazzo Designs</h3>
+
+            <p>
+                Modern trendy palazzo stitching with premium fitting.
+            </p>
+
         </div>
 
         <div class="service-box">
+
+            <div class="service-icon">🌸</div>
+
+            <h3>Patiala Salwars</h3>
+
+            <p>
+                Traditional Patiala salwars with designer boutique touch.
+            </p>
+
+        </div>
+
+        <div class="service-box">
+
+            <div class="service-icon">👑</div>
+
             <h3>Bridal Wear</h3>
-            <p>Premium bridal dresses with perfect fitting.</p>
+
+            <p>
+                Luxury bridal stitching with heavy designer finishing.
+            </p>
+
+        </div>
+
+        <div class="service-box">
+
+            <div class="service-icon">🔥</div>
+
+            <h3>Trending Suits</h3>
+
+            <p>
+                Latest fashion suits for parties and special occasions.
+            </p>
+
         </div>
 
     </div>
 
 </section>
 
-<!-- CONTACT -->
+<!-- =========================
+     CONTACT PREVIEW
+========================= -->
 
 <section class="contact-preview">
 
     <h2>Contact Us</h2>
 
-    <p><strong>Tailor:</strong> Anmolpreet Kaur</p>
+    <div class="contact-grid">
 
-    <p><strong>Phone:</strong> 7986726268</p>
+        <div class="contact-item">
+            <h3>👩 Tailor</h3>
+            <p>Anmolpreet Kaur</p>
+        </div>
 
-    <p>
-        <strong>Address:</strong>
-        104 Flat Number, Nirwana Greens 4, Kharar
-    </p>
+        <div class="contact-item">
+            <h3>📞 Phone</h3>
+            <p>7986726268</p>
+        </div>
 
-    <p><strong>Pincode:</strong> 140301</p>
+        <div class="contact-item">
+            <h3>📍 Address</h3>
+            <p>
+                104 Flat Number, Nirwana Greens 4,
+                Kharar, Mohali
+            </p>
+        </div>
 
-    <p><strong>Location:</strong> Kharar, Mohali</p>
+        <div class="contact-item">
+            <h3>📮 Pincode</h3>
+            <p>140301</p>
+        </div>
+
+    </div>
 
 </section>
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
-    <p>© 2026 Anmol Boutique | All Rights Reserved</p>
+    <p>© 2026 Anmol Boutique | All Rights Reserved ❤️</p>
 
 </footer>
 

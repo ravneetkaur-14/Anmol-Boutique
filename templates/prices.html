@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Price List</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Price List - Anmol Boutique</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
+
 <body>
+
+<!-- HEADER -->
 
 <header>
 
     <div class="logo">
         <h1>Anmol Boutique</h1>
+        <p>Designer Punjabi Boutique</p>
     </div>
 
     <nav>
@@ -22,41 +32,85 @@
 
 </header>
 
-<h2 class="title">Stitching Price List</h2>
+<!-- HERO SECTION -->
 
-<table>
+<section class="price-hero">
 
-    <tr>
-        <th>Service</th>
-        <th>Price</th>
-    </tr>
+    <div class="price-overlay">
 
-    <tr>
-        <td>Punjabi Suit Stitching</td>
-        <td>₹700</td>
-    </tr>
+        <h2>Premium Stitching Services</h2>
 
-    <tr>
-        <td>Designer Suit</td>
-        <td>₹1500</td>
-    </tr>
+        <p>Elegant Designs • Perfect Fitting • Boutique Finish</p>
 
-    <tr>
-        <td>Lehenga Stitching</td>
-        <td>₹3500</td>
-    </tr>
+    </div>
 
-    <tr>
-        <td>Blouse Stitching</td>
-        <td>₹900</td>
-    </tr>
+</section>
 
-    <tr>
-        <td>Bridal Dress Stitching</td>
-        <td>₹8000</td>
-    </tr>
+<!-- PRICE TABLE -->
 
-</table>
+<section class="price-section">
+
+    <h2 class="title">Boutique Stitching Price List</h2>
+
+    <div class="table-container">
+
+        <table class="price-table">
+
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Punjabi Suit Stitching</td>
+                <td>Elegant daily wear stitching</td>
+                <td>₹700</td>
+            </tr>
+
+            <tr>
+                <td>Designer Suit</td>
+                <td>Premium designer finish</td>
+                <td>₹1500</td>
+            </tr>
+
+            <tr>
+                <td>Lehenga Stitching</td>
+                <td>Wedding & party special</td>
+                <td>₹3500</td>
+            </tr>
+
+            <tr>
+                <td>Blouse Stitching</td>
+                <td>Custom stylish blouse</td>
+                <td>₹900</td>
+            </tr>
+
+            <tr>
+                <td>Bridal Dress Stitching</td>
+                <td>Luxury bridal collection</td>
+                <td>₹8000</td>
+            </tr>
+
+            <tr>
+                <td>Palazzo Suit Stitching</td>
+                <td>Modern trendy stitching</td>
+                <td>₹1200</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Anmol Boutique | Designed with ❤️</p>
+
+</footer>
 
 </body>
 </html>

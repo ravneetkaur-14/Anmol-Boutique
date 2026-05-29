@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<h2 class="title">Customer Messages</h2>
+
+<div class="table-container">
+
+<table class="price-table">
+
+    <tr>
+
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Message</th>
+
+    </tr>
+
+    {% for row in data %}
+
+    <tr>
+
+        <td>{{ row['id'] }}</td>
+        <td>{{ row['name'] }}</td>
+        <td>{{ row['phone'] }}</td>
+        <td>{{ row['message'] }}</td>
+
+    </tr>
+
+    {% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>
