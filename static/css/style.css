@@ -1,0 +1,499 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fff8fb;
+    color:#333;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:linear-gradient(135deg,#7a003c,#ff2d75);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.logo h1{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+}
+
+.logo p{
+    color:#ffe4ec;
+    font-size:18px;
+    margin-top:5px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav a{
+    color:white;
+    text-decoration:none;
+
+    margin-left:25px;
+
+    font-size:18px;
+    font-weight:500;
+
+    transition:0.3s;
+    position:relative;
+}
+
+nav a::after{
+    content:'';
+    position:absolute;
+
+    width:0%;
+    height:2px;
+
+    left:0;
+    bottom:-5px;
+
+    background:white;
+
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:#ffe066;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    background:#000;
+}
+
+.hero-overlay{
+    position:absolute;
+    top: 155%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    text-align:center;
+
+    color:white;
+
+    width:100%;
+    padding:20px;
+}
+
+.hero-overlay h2{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero-overlay p{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.hero-text{
+    position:absolute;
+
+    bottom:40px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+    color:white;
+
+    width:100%;
+
+    padding:20px;
+
+    background:rgba(0,0,0,0.35);
+}
+
+.hero-text h2{
+    font-size:55px;
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    text-shadow:2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero-text p{
+    font-size:28px;
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    text-shadow:2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero-text button{
+    font-size:22px;
+    font-weight:bold;
+
+    padding:15px 40px;
+
+    border-radius:50px;
+}
+/* =========================
+   BUTTON
+========================= */
+
+button{
+    background:#ff2d75;
+    color:white;
+
+    border:none;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    font-size:20px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+button:hover{
+    background:white;
+    color:#ff2d75;
+
+    transform:translateY(-5px);
+}
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+.title{
+    text-align:center;
+
+    font-size:45px;
+    font-weight:700;
+
+    color:#ff2d75;
+
+    margin-top:70px;
+    margin-bottom:40px;
+
+    position:relative;
+}
+
+.title::after{
+    content:'';
+    width:120px;
+    height:4px;
+
+    background:#ff2d75;
+
+    display:block;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+    padding:30px 60px;
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    transition:0.4s;
+
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:400px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card h3{
+    text-align:center;
+
+    padding:20px;
+
+    font-size:24px;
+    font-weight:600;
+
+    color:#7a003c;
+}
+
+/* =========================
+   PRODUCT OVERLAY
+========================= */
+
+.card::before{
+    content:"View Design";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    background:#ff2d75;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    opacity:0;
+
+    transition:0.4s;
+
+    z-index:10;
+}
+
+.card:hover::before{
+    opacity:1;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:45px;
+    color:#ff2d75;
+    margin-bottom:25px;
+}
+
+.about p{
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    background:#ffeaf1;
+    padding:80px 40px;
+}
+
+.service-container{
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.service-box{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+.service-box:hover{
+    transform:translateY(-10px);
+}
+
+.service-box h3{
+    color:#ff2d75;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.service-box p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box{
+    width:80%;
+    margin:70px auto;
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.contact-box h2{
+    text-align:center;
+
+    color:#ff2d75;
+
+    margin-bottom:30px;
+
+    font-size:40px;
+}
+
+.contact-box p{
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#7a003c;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+    font-size:18px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        margin:10px;
+        display:inline-block;
+    }
+
+    .hero-overlay h2{
+        font-size:40px;
+    }
+
+    .hero-overlay p{
+        font-size:20px;
+    }
+
+    .gallery{
+        padding:20px;
+    }
+
+    .title{
+        font-size:34px;
+    }
+
+    .contact-box{
+        width:92%;
+        padding:30px;
+    }
+
+}

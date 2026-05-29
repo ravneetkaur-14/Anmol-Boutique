@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmol Boutique</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Anmol Boutique</h1>
+        <p>Style That Defines You</p>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/prices">Price List</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <img src="{{ url_for('static', filename='images/banner.jpg.jpeg') }}">
+
+    <div class="hero-overlay">
+        <h2>Latest Punjabi Boutique Collection</h2>
+        <p>Traditional • Stylish • Trending</p>
+
+        <button>Shop Now</button>
+    </div>
+
+</section>
+
+<!-- TEXT BELOW IMAGE -->
+
+<section class="hero-content">
+
+    <h2>Designer Punjabi Suits & Boutique Stitching</h2>
+
+    <p>
+        Punjabi Suits | Neck Designs | Palazzo | Salwars
+    </p>
+
+    <a href="/gallery">
+        <button>Explore Collection</button>
+    </a>
+
+</section>
+<!-- ABOUT -->
+
+<section class="about">
+
+    <h2>Welcome To Anmol Boutique</h2>
+
+    <p>We provide ladies stitching services including:</p>
+
+    <ul>
+        <li>Punjabi Suits</li>
+        <li>Neck Designs</li>
+        <li>Plazzo Designs</li>
+        <li>Patiala Salwars</li>
+        <li>Bridal Wear</li>
+        <li>Trending Suits</li>
+    </ul>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-box">
+            <h3>Punjabi Suit Stitching</h3>
+            <p>Beautiful custom stitched Punjabi suits.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Designer Neck Designs</h3>
+            <p>Latest trendy neck patterns available.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Plazzo & Salwars</h3>
+            <p>Stylish plazzo and salwar stitching.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Bridal Wear</h3>
+            <p>Premium bridal dresses with perfect fitting.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-preview">
+
+    <h2>Contact Us</h2>
+
+    <p><strong>Tailor:</strong> Anmolpreet Kaur</p>
+
+    <p><strong>Phone:</strong> 7986726268</p>
+
+    <p>
+        <strong>Address:</strong>
+        104 Flat Number, Nirwana Greens 4, Kharar
+    </p>
+
+    <p><strong>Pincode:</strong> 140301</p>
+
+    <p><strong>Location:</strong> Kharar, Mohali</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Anmol Boutique | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

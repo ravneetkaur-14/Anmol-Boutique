@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Anmol Boutique</h1>
+    </div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/prices">Price List</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- Punjabi Suits -->
+
+<h2 class="title">Punjabi Suit Collection</h2>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/TraditionalPunjabiSuit.jpeg') }}">
+        <h3>Traditional Punjabi Suit</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/PartyWearSuit.webp') }}">
+        <h3>Party Wear Suit</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/DesignerSuit.webp') }}">
+        <h3>Designer Suit</h3>
+    </div>
+
+</div>
+
+<!-- Neck Designs -->
+
+<h2 class="title">Neck Designs</h2>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/BoatNeck.jpg') }}">
+        <h3>Boat Neck</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/RoundNeck.jpg') }}">
+        <h3>Round Neck</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/CollarNeck.jpg') }}">
+        <h3>Collar Neck</h3>
+    </div>
+
+</div>
+
+<!-- Palazzo Designs -->
+
+<h2 class="title">Palazzo Designs</h2>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/SimplePalazzo.jpg') }}">
+        <h3>Simple Palazzo</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/PrintedPalazzo.jpg') }}">
+        <h3>Printed Palazzo</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/PartyWearPalazzo.jpg') }}">
+        <h3>Party Wear Palazzo</h3>
+    </div>
+
+</div>
+
+<!-- Salwar Designs -->
+
+<h2 class="title">Salwar Designs</h2>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/PatialaSalwar.jpg') }}">
+        <h3>Patiala Salwar</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/DhotiSalwar.jpg') }}">
+        <h3>Dhoti Salwar</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/ChuridarSalwar.jpg') }}">
+        <h3>Churidar Salwar</h3>
+    </div>
+
+</div>
+
+<!-- Trending Suits -->
+
+<h2 class="title">Trending Suits</h2>
+
+<div class="gallery">
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/AnarkaliSuit.jpg') }}">
+        <h3>Anarkali Suit</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/ShararaSuit.jpg') }}">
+        <h3>Sharara Suit</h3>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/HeavyPartyWear.jpg') }}">
+        <h3>Heavy Party Wear</h3>
+    </div>
+
+</div>
+
+</body>
+</html>
