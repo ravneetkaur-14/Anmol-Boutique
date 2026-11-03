@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; background: #fff8fb; color: #333; }
+header { background: linear-gradient(135deg,#7a003c,#ff2d75); display:flex; justify-content:space-between; align-items:center; padding:20px 60px; position:sticky; top:0; z-index:1000; box-shadow:0 4px 10px rgba(0,0,0,0.2); }
+.logo h1 { color:white; font-size:42px; font-weight:700; }
+.logo p { color:#ffe4ec; font-size:18px; margin-top:5px; }
+nav a { color:white; text-decoration:none; margin-left:25px; font-size:18px; font-weight:500; transition:0.3s; position:relative; }
+nav a::after { content:''; position:absolute; width:0%; height:2px; left:0; bottom:-5px; background:white; transition:0.3s; }
+nav a:hover::after { width:100%; }
+nav a:hover { color:#ffe066; }
+.hero { position:relative; width:100%; height:100vh; overflow:hidden; }
+.hero img { width:100%; height:100%; object-fit:contain; background:#000; }
+.hero-overlay { position:absolute; top:155%; left:50%; transform:translate(-50%,-50%); text-align:center; color:white; width:100%; padding:20px; }
+.hero-overlay h2 { font-size:70px; font-weight:bold; margin-bottom:20px; }
+.hero-overlay p { font-size:32px; margin-bottom:30px; }
+button { background:#ff2d75; color:white; border:none; padding:16px 40px; border-radius:50px; font-size:20px; font-weight:600; cursor:pointer; transition:0.4s; }
+button:hover { background:white; color:#ff2d75; transform:translateY(-5px); }
+.title { text-align:center; font-size:45px; font-weight:700; color:#ff2d75; margin-top:70px; margin-bottom:40px; position:relative; }
+.title::after { content:''; width:120px; height:4px; background:#ff2d75; display:block; margin:10px auto; border-radius:10px; }
+.gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:35px; padding:30px 60px; }
+.card { background:white; border-radius:20px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.12); transition:0.4s; position:relative; }
+.card:hover { transform:translateY(-12px); box-shadow:0 15px 30px rgba(0,0,0,0.2); }
+.card img { width:100%; height:400px; object-fit:cover; transition:0.5s; }
+.card:hover img { transform:scale(1.08); }
+.card h3 { text-align:center; padding:20px; font-size:24px; font-weight:600; color:#7a003c; }
+.card::before { content:"View Design"; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:#ff2d75; color:white; padding:12px 25px; border-radius:30px; opacity:0; transition:0.4s; z-index:10; }
+.card:hover::before { opacity:1; }
+.about { padding:80px 10%; text-align:center; }
+.about h2 { font-size:45px; color:#ff2d75; margin-bottom:25px; }
+.about p { font-size:20px; line-height:1.8; color:#555; }
+.services { background:#ffeaf1; padding:80px 40px; }
+.service-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+.service-box { background:white; padding:40px; border-radius:20px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.4s; }
+.service-box:hover { transform:translateY(-10px); }
+.service-box h3 { color:#ff2d75; margin-bottom:15px; font-size:28px; }
+.service-box p { color:#555; line-height:1.7; }
+.contact-preview { padding:60px 40px; text-align:center; }
+.contact-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; max-width:1100px; margin:auto; }
+.contact-item { background:white; padding:25px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+.contact-preview h2 { color:#ff2d75; margin-bottom:30px; font-size:40px; }
+.contact-item h3 { color:#7a003c; margin-bottom:10px; }
+.contact-box { width:80%; margin:70px auto; background:white; padding:50px; border-radius:20px; box-shadow:0 5px 15px rgba(0,0,0,0.15); }
+.contact-box h2 { text-align:center; color:#ff2d75; margin-bottom:30px; font-size:40px; }
+.contact-box p { text-align:center; font-size:18px; margin-top:20px; color:#7a003c; }
+footer { background:#7a003c; color:white; text-align:center; padding:25px; margin-top:60px; font-size:18px; }
+.price-hero { height:55vh; background:url('/images/banner.jpg.jpeg'); background-size:cover; background-position:center; position:relative; }
+.price-overlay { position:absolute; inset:0; background:rgba(225,73,73,0.5); display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; color:white; }
+.price-overlay h2 { font-size:60px; margin-bottom:15px; }
+.price-overlay p { font-size:28px; }
+.price-section { padding:60px 30px; }
+.table-container { width:90%; margin:auto; overflow-x:auto; }
+.price-table { width:100%; border-collapse:collapse; background:white; border-radius:20px; overflow:hidden; box-shadow:0 10px 25px rgba(214,181,181,0.15); }
+.price-table th { background:linear-gradient(to right,#7a003c,#ff2d75); color:white; padding:22px; font-size:24px; text-transform:uppercase; }
+.price-table td { padding:22px; text-align:center; font-size:20px; border-bottom:1px solid #eee; transition:0.3s; }
+.price-table tr:hover { background:#fff0f5; }
+.price-table tr:nth-child(even) { background:#f2e4ea; }
+.price-table td:last-child { font-weight:bold; color:#ff2d75; font-size:24px; }
+form { display:flex; flex-direction:column; gap:20px; }
+form input, form textarea { padding:18px; border:1px solid #ddd; border-radius:12px; font-size:18px; outline:none; }
+form textarea { height:150px; resize:none; }
+form button { width:250px; margin:auto; }
+@media(max-width:768px) {
+  header { flex-direction:column; text-align:center; padding:20px; }
+  nav { margin-top:15px; }
+  nav a { margin:10px; display:inline-block; }
+  .logo h1 { font-size:34px; }
+  .hero { height:70vh; }
+  .hero-overlay { top:50%; }
+  .hero-overlay h2 { font-size:40px; }
+  .hero-overlay p { font-size:20px; }
+  .gallery { padding:20px; }
+  .title { font-size:34px; }
+  .contact-box { width:92%; padding:30px; }
+  .price-overlay h2 { font-size:38px; }
+  .price-overlay p { font-size:20px; }
+  .price-table th, .price-table td { font-size:16px; padding:15px; }
+}
